@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.grid-container {
+  display: grid;
+  height: 500vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.22fr 0.1fr 3.6fr 3.6fr 3.6fr 2.6fr 2.6fr 2.6fr 2.6fr;
+  grid-template-areas:
+    "nav nav"
+    "alert alert"
+    "main1 main1"
+    "main2 main2"
+    "main3 main3"
+    "sub1 sub2"
+    "sub3 sub4"
+    "sub5 sub6"
+    "footer footer";
+  grid-gap: 0.7rem;
+}
+
+.content-title {
+  font-size: 4rem;
+  line-height: 3.5rem;
+}
+
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content-subheading-title {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.content-subheading-p {
+  line-height: 2.5rem;
+  color: #8b8b90;
+}
+
+.main-text-links a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #277dd4;
+}
+
+.main-text-links a:hover {
+  text-decoration: underline;
+}
+
+.sub-content-title {
+  font-size: 2.5rem;
+}
+
+.sub-content-subheading-title {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.sub-content-subheading-p {
+  font-size: 0.8rem;
+  line-height: 2rem;
+}
+
+#nav-bar {
+  background: #333333;
+  grid-area: nav;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+#nav-bar img {
+  height: 25px;
+  width: auto;
+}
+#nav-bar ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7px;
+}
+#nav-bar ul li a {
+  text-decoration: none;
+  margin: 0 25px;
+  color: #d6d6d6;
+}
+#nav-bar ul li a:hover {
+  color: #fff;
+}
+#alert-bar {
+  background-color: #f5f5f7;
+  grid-area: alert;
+  margin: -0.7rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main-content1 {
+  background-color: #fbfbfd;
+  grid-area: main1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-image: url(/img/iPhone12.png);
+  background-repeat: no-repeat;
+  background-size: 600px auto;
+  background-position: center 300px;
+}
+
+#main-content1 .main-text-content {
+  transform: translateY(-150%);
+}
+
+#main-content1 .main-text-links {
+  transform: translateY(-210px);
+}
+
+#main-content2 {
+  background-color: rgba(9, 8, 58, 0.9);
+  grid-area: main2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-image: url(/img/iTamod.png);
+  background-size: 1500px auto;
+  background-repeat: no-repeat;
+  background-position: center 100px;
+}
+
+#main-content2 .main-text-content {
+  transform: translateY(-150%);
+}
+
+#main-content2 .main-text-links {
+  transform: translateY(-210px);
+}
+
+#main-content2 .content-title {
+  color: #f5f5f7;
+}
+
+#main-content2 .content-subheading-title {
+  color: #c2e7d9;
+}
+
+#main-content3 {
+  background-color: #fbfbfd;
+  grid-area: main3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-image: url(/img/apple\ watch.png);
+  background-size: 500px auto;
+  background-repeat: no-repeat;
+  background-position: center 220px;
+}
+
+#main-content3 .main-text-content {
+  transform: translateY(-130%);
+}
+
+#main-content3 .main-text-links {
+  transform: translateY(-230px);
+}
+#main-content3 .content-subheading-title {
+  font-weight: 400;
+  font-size: 2rem;
+}
+.main-text-content h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#main-content3 .content-title {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#sub-content1 {
+  background-color: #fbfbfd;
+  grid-area: sub1;
+  background-image: url(/img/ipad.png);
+  background-size: 500px auto;
+  background-repeat: no-repeat;
+  background-position: center 210px;
+  margin-left: 0.7rem;
+}
+
+#sub-content1 .main-text-content {
+  transform: translateY(-100%);
+}
+
+#sub-content2 {
+  background-color: #fbfbfd;
+  grid-area: sub2;
+  background-image: url(/img/imac.png);
+  background-size: 600px auto;
+  background-repeat: no-repeat;
+  background-position: center 150px;
+  margin-right: 0.7rem;
+}
+
+#sub-content2 .main-text-content {
+  transform: translateY(-128%);
+}
+
+#sub-content2 .main-text-links {
+  margin-top: 10px;
+}
+
+#sub-content3 {
+  background-color: #fbfbfd;
+  grid-area: sub3;
+  background-image: url(/img/ipad2.png);
+  background-size: 300px auto;
+  background-repeat: no-repeat;
+  background-position: center 150px;
+  margin-left: 0.7rem;
+}
+#sub-content3 .main-text-content {
+  transform: translateY(-110%);
+}
+
+#sub-content3 p:nth-child(1) {
+  font-size: 1rem;
+  line-height: 0.1rem;
+}
+
+#sub-content4 {
+  background-color: #fbfbfd;
+  grid-area: sub4;
+  background-image: url(/img/applewatch3pc.png);
+  background-size: 600px auto;
+  background-repeat: no-repeat;
+  background-position: center 150px;
+  margin-right: 0.7rem;
+}
+
+#sub-content4 .main-text-content {
+  transform: translateY(-128%);
+}
+
+#sub-content5 {
+  background-color: #fbfbfd;
+  grid-area: sub5;
+  background-image: url(/img/applewatchMany.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 0.7rem;
+}
+
+#sub-content5 .main-text-content {
+  transform: translateY(-170%);
+}
+
+#sub-content6 {
+  background-color: #fbfbfd;
+  grid-area: sub6;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+    url(/img/postersquidgame.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 0.7rem;
+}
+#sub-content6 .content-title {
+  color: #fff;
+  transform: translateY(-290%);
+}
+
+#sub-content6 .main-text-links {
+  transform: translateY(750%);
+}
+
+#sub-content6 .main-text-links a {
+  color: #1e6db8;
+}
+
+#footer {
+  background-color: #fbfbfd;
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f7;
+}
+
+.upper-text {
+  color: #8f8f94;
+}
+
+.link-name-title {
+  color: #3f3f42;
+  font-weight: 600;
+}
+
+.link-name a {
+  color: #7a7a7e;
+}
+.link-name a:hover {
+  text-decoration: underline;
+}
+
+.link-name p,
+.link-name a,
+.footer-bottom p,
+.upper-text p {
+  font-size: 0.7rem;
+}
+.footer-bottom-text p,
+.footer-bottom {
+  font-size: 0.7rem;
+}
+.footer-border {
+  height: 20px;
+  border-top: 1px solid #d2d2d7;
+  width: 100%;
+}
+
+.more-ways-to-shop {
+  font-size: 0.7rem;
+  margin: 30px 0 10px 0;
+  color: #8f8f94;
+}
+
+#footer .footer-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 20px;
+}
+
+#footer .footer-links {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  /* background-color: crimson; */
+  margin: auto;
+  width: 100%;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: -10px;
+}
+.footer-bottom-text {
+  display: flex;
+  margin-bottom: 20px;
+  color: #8f8f94;
+}
+
+.footer-bottom-country {
+  margin-bottom: 20px;
+}
+
+.footer-bottom-country a {
+  color: #8f8f94;
+}
+
+.footer-bottom-country a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom-text p {
+  margin-right: 30px;
+}
+.footer-bottom-text a {
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 1px solid #d2d2d7;
+  color: #8f8f94;
+}
+.footer-bottom-text a:nth-child(6) {
+  border: none;
+}
